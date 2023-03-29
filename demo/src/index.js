@@ -1,15 +1,12 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React from 'react'
+import { render } from 'react-dom'
 
-import Example from '../../src'
+import { Playground } from '../../src'
 
-export default class Demo extends Component {
-  render() {
-    return <div>
-      <h1>api-platform-playground Demo</h1>
-      <Example/>
-    </div>
-  }
-}
+const Demo = ({ ...props }) => (
+  <Playground />
+)
+
+export default Demo
 
 render(<Demo/>, document.querySelector('#demo'))

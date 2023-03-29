@@ -8,7 +8,8 @@
     "css",
     "es",
     "lib",
-    "umd"
+    "umd",
+    "php-wasm/build"
   ],
   "scripts": {
     "build": "nwb build-react-component",
@@ -33,5 +34,10 @@
   "repository": "",
   "keywords": [
     "react-component"
-  ]
+  ],
+  "dependencies": {
+    "@monaco-editor/react": "^4.4.6",
+    "react-helmet": "^6.1.0",
+    "rxjs": "^7.8.0"
+  }
 }
